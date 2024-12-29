@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+    <script>
+        document.addEventListener(
+            "DomContentLoaded",
+
+            function () {
+                const thisisbutton = document.getElementById("butn");
+                const txt = document.getElementById("txt");
+
+                function changevar() {
+                    txt.innerHTML = "Hello World";
+                }
+                thisisbutton.addEventListener("click", changevar);
+            }
+
+        );
+    </script>
+    
+</head>
+
+<body>
+    <h1 id="txt">change me</h1>
+    <button id="butn">click me</button>
+
+    
+
+</body>
+
+
+</html>
